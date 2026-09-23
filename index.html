@@ -3,10 +3,355 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QAMARESSA</title>
+
+  <title>QAMARESSA | Beauty & Lifestyle</title>
+  <meta name="description" content="QAMARESSA is a modern beauty and lifestyle brand created with elegance, simplicity and everyday confidence in mind.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2b2525;
+      background: #fffaf7;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      width: 100%;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 250, 247, 0.96);
+      border-bottom: 1px solid #eadfd8;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background:
+        linear-gradient(rgba(255,250,247,0.76), rgba(255,250,247,0.76)),
+        linear-gradient(135deg, #f6e5dc, #fffaf7, #ead8cf);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 20px;
+      color: #8a6f63;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      letter-spacing: 8px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 32px;
+      font-size: 18px;
+      color: #665752;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      border: 1px solid #2b2525;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: 0.25s ease;
+    }
+
+    .button:hover {
+      background: #2b2525;
+      color: #ffffff;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-title span {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #9b7e72;
+    }
+
+    .section-title h2 {
+      margin-top: 10px;
+      font-size: 36px;
+      font-weight: 500;
+    }
+
+    .about {
+      background: #ffffff;
+    }
+
+    .about-content {
+      max-width: 820px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      color: #655852;
+    }
+
+    .values {
+      background: #f8efea;
+    }
+
+    .value-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .value-card {
+      background: #ffffff;
+      padding: 42px 28px;
+      text-align: center;
+      border: 1px solid #eadfd8;
+    }
+
+    .value-card h3 {
+      margin-bottom: 14px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .value-card p {
+      font-size: 14px;
+      color: #74645e;
+    }
+
+    .coming-soon {
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .coming-box {
+      max-width: 900px;
+      margin: auto;
+      padding: 70px 30px;
+      border: 1px solid #e7d9d1;
+      background: #fffaf7;
+    }
+
+    .coming-box h2 {
+      font-size: 36px;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    .coming-box p {
+      color: #6c5b55;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    footer {
+      background: #2b2525;
+      color: #eee5e0;
+      padding: 40px 8%;
+      text-align: center;
+    }
+
+    footer .footer-logo {
+      font-size: 20px;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: #cbbdb6;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav {
+        gap: 14px;
+        font-size: 12px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+        letter-spacing: 4px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .value-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 6%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>QAMARESSA</h1>
-  <p>Official Website</p>
+
+  <header>
+    <div class="logo">QAMARESSA</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#values">Our Vision</a>
+      <a href="#collection">Collection</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Beauty · Lifestyle · Elegance</div>
+
+        <h1>QAMARESSA</h1>
+
+        <p>
+          Modern beauty and lifestyle essentials inspired by elegance,
+          simplicity and everyday confidence.
+        </p>
+
+        <a class="button" href="#about">Discover Our Brand</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-title">
+        <span>Our Story</span>
+        <h2>Designed for Everyday Beauty</h2>
+      </div>
+
+      <div class="about-content">
+        <p>
+          QAMARESSA is created for modern lifestyles where beauty,
+          practicality and refined design come together.
+          We believe everyday products can feel elegant,
+          thoughtful and effortless.
+        </p>
+      </div>
+    </section>
+
+    <section class="values" id="values">
+      <div class="section-title">
+        <span>Our Philosophy</span>
+        <h2>What Defines QAMARESSA</h2>
+      </div>
+
+      <div class="value-grid">
+
+        <div class="value-card">
+          <h3>Modern Elegance</h3>
+          <p>
+            Clean aesthetics and contemporary style designed
+            to feel timeless and easy to enjoy.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <h3>Thoughtful Design</h3>
+          <p>
+            We focus on practical details and products created
+            for real everyday routines.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <h3>Everyday Confidence</h3>
+          <p>
+            Beauty should feel effortless. QAMARESSA is designed
+            to complement your own style and confidence.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="coming-soon" id="collection">
+      <div class="coming-box">
+        <div class="eyebrow">QAMARESSA Collection</div>
+
+        <h2>Coming Soon</h2>
+
+        <p>
+          Our first collection is currently being prepared.
+          New beauty and lifestyle essentials will be introduced soon.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">QAMARESSA</div>
+    <p>© 2026 QAMARESSA. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
