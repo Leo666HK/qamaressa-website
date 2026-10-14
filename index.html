@@ -70,12 +70,19 @@
       padding: 18px 0;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 4px;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 
+.logo img {
+  height: 46px;
+  width: auto;
+  max-width: 240px;
+  display: block;
+  object-fit: contain;
+}
     .nav-links {
       display: flex;
       gap: 26px;
@@ -445,8 +452,11 @@
         font-size: 34px;
       }
     }
-
-    @media (max-width: 640px) {
+@media (max-width: 640px) {
+  .logo img {
+  height: 36px;
+  max-width: 200px;
+}
       .nav {
         flex-direction: column;
         gap: 12px;
@@ -492,7 +502,9 @@
 
   <header>
     <div class="container nav">
-      <div class="logo">QAMARESSA</div>
+      <div class="logo">
+  <img src="LOGO.png" alt="QAMARESSA">
+</div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#philosophy">Philosophy</a>
